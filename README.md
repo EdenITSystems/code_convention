@@ -17,9 +17,11 @@ voici un squelette de message de commit  :
     - [type] : <message>
 
 Exemple : 
+
     - [delete-file] : suppression du README
 
 parmi les différents types de commit nous pouvons avoir : 
+
     -[feat]
     -[review]
     -[refacto]
@@ -38,8 +40,6 @@ etablir une convention pour une pull request est necessaire du fait qu'elle perm
 
 voici le squelette d'une pull request : 
 
-    #auteur
-    #dev..............................
     |desc : 
         -<modif 1>
         -<modif 2>
@@ -49,8 +49,6 @@ voici le squelette d'une pull request :
 
 Exemple :
 
-    #jaures-kano
-    #
     |desc : delete-file
         -REAME.md
         -home.html
