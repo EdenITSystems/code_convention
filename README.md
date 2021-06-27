@@ -1,4 +1,4 @@
-# code_convention
+### code_convention
 Les conventions de travail de l'entreprise Eden It Systems
 
 # Introduction
@@ -9,49 +9,53 @@ La définition ou l’utilisation de convention au sein d’une équipe, d’une
 
 # 1- convention des commits
 
-le bon nommage des messages de commits est un signe de la qualité de la gestion du projet et du bon découpage des tâches.
-le but est de definir un schema logique d'écriture de ces messages, car git n'impose aucune contrainte.
+Le bon nommage des messages de commits est un signe de la qualité de la gestion du projet et du bon découpage des tâches.
+Le but est de definir un schema logique d'écriture de ces messages, car git n'impose aucune contrainte.
 
-voici un squelette de message de commit  : 
+Voici un squelette de message de commit : 
 
     - [type] : <message>
 
-Exemple : 
+Parmi les différents "types" de commit nous pouvons avoir : 
 
-    - [delete-file] : suppression du README
-
-parmi les différents types de commit nous pouvons avoir : 
-
-    -[feat]
-    -[review]
-    -[refacto]
-    -[fix]
-    -[update]
-    -[change-bundle]
-    -[fix-archi]
-    -[]
-    -[]
-    -[]
+    -feat : ajout de fonctionnalité.
+    -refactor : changement du code qui ne change rien au    fonctionnement.
+    -fix : correction de bugs.
+    -style : changement du style sans changement de la logique.
+    -build : Système de build (exemple : gulp, webpack, npm).
+    -docs : Documentation.
+    -perf : amélioration des performances
+    - test : modification des tests (systeme de teste unitaire ou ajout de nouveau teste).
+    -update : mise à jour
+    -change-bundle : 
+    -fix-archi : 
     - ...
 
-# 2- convention pour les pulls requests
+Un message de commit ou encore description explique les motivations derrière le changement sans pour autant énumerer tout les changements éffectué
 
-etablir une convention pour une pull request est necessaire du fait qu'elle permet de savoir de facons sommaire qu'elles sont les modifications qui ont été apporté.
+Exemple de nommage de commit : 
 
-voici le squelette d'une pull request : 
+    - [docs] : restructuration.
+
+
+# 2- Convention pour les pulls requests
+
+Etablir une convention pour une pull request est necessaire du fait qu'elle permet de savoir de facons sommaire qu'elles sont les modifications qui ont été apporté.
+
+Voici le squelette d'une pull request : 
 
     |desc : 
         -<modif 1>
         -<modif 2>
         -<modif 3>
         -<modif n>
-    <niveau de difficulté estimé>****
+    <Niveau de difficulté estimé>****
 
 Exemple :
 
-    |desc : delete-file
+    |desc : modification du fichier readme
+
         -REAME.md
         -home.html
         -etc ....
     **
-
