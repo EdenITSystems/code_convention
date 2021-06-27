@@ -54,6 +54,7 @@ Voici le squelette d'une pull request :
 Exemple :
 
     |desc : modification du fichier readme
+
         -REAME.md
         -home.html
         -etc ....
